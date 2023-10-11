@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    background:black;
+    color:white;
+    overflow:hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight:300;
+}
+
+#wrapper{
+    display:flex;
+    flex-direction: row;
+}
+
+#left{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+   align-items:center;
+   justify-content:center;
+   height:100vh;
+
+}
+
+#right{
+    flex:1;
+
+}
+
+#signin{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:80%;
+    padding-bottom:1rem;
+}
+
+#signin form{
+    width:80%;
+    padding-bottom:3rem;
+}
+
+#signin .logo {
+    margin-bottom: 8vh;
+  }
+  
+  #signin .logo img {
+    width: 300px;
+  }
+
+  #signin label{
+    font-size:15px;
+    line-height:50px;
+    font-weight:500;
+  }
+
+  #signin .text-input{
+    margin-bottom:1.3rem;
+    width:100%;
+    background:black;
+    color:white;
+    border-radius:2px;
+  }
+   
+  #signin .primary-btn{
+    width:100%;
+  }
+  .primary-btn{
+    padding-bottom:20px;
+    height:10px;
+    background:orange;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+  }
+
+   .primary-btn:hover{
+    background-color: brown;
+   }
+
+  @media(min-width:1200px) {
+    #left{
+        flex:4;
+
+    }
+    #right{
+        flex:6;
+
+    }
+
+  }
+
+  #signin .links a{
+   display:block;
+   text-decoration:none;
+   text-align: center;
+   color:white;
+  }
+
+  #main-footer{
+
+  }
+
+  #main-footer a{
+    color:white;
+   
+   
+  }
+
+  #showcase{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+   background:url(https://i.ytimg.com/vi/2-crBg6wpp0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAdaY603h_kNKEU537Mxlrn15IxGw);
+    height:100vh;
+  }
+
+  #showcase .showcase-text{
+    color:white;
+    width:100%;
+  }
+
+  #showcase .secondary-btn{
+    color:white;
+    width:100%;
+    margin:auto;
+  }
+
+ @media(max-width:765px){
+  #right{
+    display:none;
+  }
+ }
+ body{
+  overflow:auto;
+ }
+
